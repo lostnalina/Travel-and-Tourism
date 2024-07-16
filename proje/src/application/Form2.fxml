@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form2Controller">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Yeni%20klasör%20(2)/register_login_signup_icon_219991%20(4).png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="437.0" prefHeight="574.0" prefWidth="522.0">
+         <children>
+            <Label layoutX="117.0" layoutY="97.0" text="Username:" textFill="#16139a">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="120.0" layoutY="177.0" text="Password:" textFill="#0a1194">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user_text" layoutX="203.0" layoutY="96.0" prefHeight="25.0" prefWidth="203.0" />
+            <TextField fx:id="pass_text" layoutX="203.0" layoutY="176.0" prefHeight="25.0" prefWidth="203.0" />
+            <Button fx:id="log_btn" layoutX="196.0" layoutY="246.0" mnemonicParsing="false" onAction="#log_btn_Click" prefHeight="25.0" prefWidth="81.0" text="Login" textFill="#0d0440">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="sign_btn" layoutX="325.0" layoutY="247.0" mnemonicParsing="false" onAction="#sign_btn_Click" prefHeight="24.0" prefWidth="81.0" text="Sign Up" textFill="#130e75">
+               <font>
+                  <Font name="Sylfaen" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="64.0" layoutY="14.0" prefHeight="38.0" prefWidth="426.0" text="Travel and Tourism Managemet System " textFill="#04053b">
+               <font>
+                  <Font name="Sylfaen" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

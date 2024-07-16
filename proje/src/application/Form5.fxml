@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="844.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form5Controller">
+   <children>
+      <TabPane layoutY="14.0" prefHeight="844.0" prefWidth="1108.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="CUSTOMER DETAİLS">
+            <content>
+              <AnchorPane fx:id="personel_details" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="93.0" text="Username:">
+                           <font>
+                              <Font name="Sylfaen" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="51.0" layoutY="392.0" text="Phone :">
+                           <font>
+                              <Font name="Sylfaen" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="340.0" text="Email:">
+                           <font>
+                              <Font name="Sylfaen" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username_txt" layoutX="187.0" layoutY="96.0" prefHeight="25.0" prefWidth="208.0" />
+                        <TextField fx:id="phone_txt" layoutX="190.0" layoutY="395.0" prefHeight="25.0" prefWidth="203.0" />
+                        <TextField fx:id="mail_txt" layoutX="188.0" layoutY="343.0" prefHeight="25.0" prefWidth="203.0" />
+                        <Button fx:id="update_btn" layoutX="143.0" layoutY="605.0" mnemonicParsing="false" onAction="#update_btn_Click" prefHeight="36.0" prefWidth="98.0" text="Update">
+                           <font>
+                              <Font name="Sylfaen" size="19.0" />
+                           </font></Button>
+                        <Button fx:id="delete_btn" layoutX="498.0" layoutY="606.0" mnemonicParsing="false" onAction="#delete_btn_Click" prefHeight="36.0" prefWidth="98.0" text="Delete" textFill="#cd0303">
+                           <font>
+                              <Font name="Sylfaen" size="18.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="411.0" fitWidth="616.0" layoutX="554.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Downloads/tourists.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="141.0" text="Password:">
+                           <font>
+                              <Font name="Sylfaen" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="pass_txt" layoutX="188.0" layoutY="144.0" prefHeight="25.0" prefWidth="203.0" />
+                        <Label fx:id="lbl" layoutX="45.0" layoutY="538.0" prefHeight="31.0" prefWidth="361.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="CheckPackage">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="20.0" layoutY="34.0" prefHeight="815.0" prefWidth="1108.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Package 1">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="21.0" layoutY="14.0" prefHeight="48.0" prefWidth="405.0" text="Golden Package">
+                                             <font>
+                                                <Font name="Sylfaen" size="48.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="31.0" layoutY="87.0" prefHeight="48.0" prefWidth="405.0" text="- 6 days 7 nights">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="31.0" layoutY="143.0" prefHeight="48.0" prefWidth="405.0" text="-Airport Assistance">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="31.0" layoutY="198.0" prefHeight="48.0" prefWidth="405.0" text="- Half Day City Tour">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="31.0" layoutY="258.0" prefHeight="48.0" prefWidth="405.0" text="- Daily Buffet">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="31.0" layoutY="322.0" prefHeight="48.0" prefWidth="405.0" text="- Welcome Drinks on Arrival">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="21.0" layoutY="393.0" prefHeight="48.0" prefWidth="405.0" text="- Full Day 3 Island Cruise">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="21.0" layoutY="452.0" prefHeight="48.0" prefWidth="405.0" text=" -English Speaking Guide">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="447.0" fitWidth="602.0" layoutX="475.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/Yeni%20klasör%20(2)/Island.PNG" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="630.0" prefHeight="48.0" prefWidth="423.0" text="Summer Special">
+                                             <font>
+                                                <Font name="Sylfaen" size="44.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="pkg1" layoutX="980.0" layoutY="722.0" prefHeight="50.0" prefWidth="120.0" text="145$" textFill="#c30909">
+                                             <font>
+                                                <Font name="Sylfaen" size="48.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                            <Tab text="Package2">
+                                 <content>
+                                    <AnchorPane prefHeight="781.0" prefWidth="1097.0">
+                                       <children>
+                                          <Label layoutX="25.0" layoutY="14.0" text="Silver Package">
+                                             <font>
+                                                <Font name="Sylfaen" size="48.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="100.0" text="-5 days and 6 nights">
+                                             <font>
+                                                <Font name="Sylfaen" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="41.0" layoutY="349.0" text="-Full Day Island Cruise ">
+                                             <font>
+                                                <Font name="Sylfaen" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="39.0" layoutY="221.0" text="-Meet and Greet at Airpot">
+                                             <font>
+                                                <Font name="Sylfaen" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="161.0" text="-Toll Free and Entrace Free Ticket">
+                                             <font>
+                                                <Font name="Sylfaen" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="283.0" text="-Welcome Drinks at Arrival ">
+                                             <font>
+                                                <Font name="Sylfaen" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="409.0" text="-Cruise with Dinner ">
+                                             <font>
+                                                <Font name="Sylfaen" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="367.0" layoutY="537.0" text="Winter Special">
+                                             <font>
+                                                <Font name="Sylfaen" size="48.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="pkg2" layoutX="977.0" layoutY="723.0" prefHeight="56.0" prefWidth="130.0" text="290$" textFill="#d30a0a">
+                                             <font>
+                                                <Font name="Sylfaen" size="44.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="402.0" fitWidth="684.0" layoutX="508.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/Yeni%20klasör%20(2)/resim1.PNG" />
+                                             </image>
+                                          </ImageView>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Package 3">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="36.0" layoutY="25.0" prefHeight="61.0" prefWidth="338.0" text="Bronze Package">
+                                             <font>
+                                                <Font name="Sylfaen" size="48.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="119.0" text="-6 days 5 nights">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="175.0" text="-Free Sıra Gecesi Show,Horse Riding">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="232.0" text="-Welcoming Drinks on Arrival">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="279.0" text="-Daily Buffet">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="334.0" text="-Stay in 5 Star Hotel">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="36.0" layoutY="386.0" text="-Kebap Dinner">
+                                             <font>
+                                                <Font name="Sylfaen" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="130.0" fitWidth="306.0" layoutX="746.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/Yeni%20klasör%20(2)/Siragecesi.PNG" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="299.0" fitWidth="469.0" layoutX="633.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/Ekran%20Alıntısı.PNG" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="374.0" layoutY="514.0" text="Spring Special">
+                                             <font>
+                                                <Font name="Sylfaen" size="48.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="pkg3" layoutX="994.0" layoutY="725.0" text="\$385 " textFill="#d00000">
+                                             <font>
+                                                <Font name="Sylfaen" size="48.0" />
+                                             </font>
+                                          </Label>
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Reservetion">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="28.0" layoutY="91.0" text="Name Surname:">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="274.0" text="Select Package:">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="343.0" text="Total Persons:">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="155.0" layoutY="140.0" text="Id:">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="93.0" layoutY="316.0">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="125.0" layoutY="201.0" text="Phone:">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="84.0" layoutY="408.0" text="Total Price:">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_price" layoutX="266.0" layoutY="408.0" prefHeight="36.0" prefWidth="208.0">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="select_cmb" layoutX="263.0" layoutY="274.0" onAction="#select_cmb_Action" prefHeight="25.0" prefWidth="213.0" />
+                        <Button fx:id="check_btn" layoutX="15.0" layoutY="638.0" mnemonicParsing="false" onAction="#check_btn_Click" prefHeight="51.0" prefWidth="122.0" text="Check Price">
+                           <font>
+                              <Font name="Sylfaen" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="create_rsv" layoutX="307.0" layoutY="632.0" mnemonicParsing="false" onAction="#create_rsv_Click" prefHeight="57.0" prefWidth="170.0" text="Create Reservation">
+                           <font>
+                              <Font name="Sylfaen" size="18.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="127.0" fitWidth="210.0" layoutX="927.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/Yeni%20klasör%20(2)/Ekran%20Alıntısı.PNG" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tableview_reserv" layoutX="506.0" layoutY="92.0" prefHeight="568.0" prefWidth="596.0">
+                          <columns>
+                            <TableColumn fx:id="table_name" prefWidth="85.0" text="Name" />
+                            <TableColumn fx:id="table_id" minWidth="7.0" prefWidth="75.0" text="Id" />
+                              <TableColumn fx:id="table_phone" prefWidth="79.0" text="Phone" />
+                              <TableColumn fx:id="table_package" prefWidth="89.0" text="Package" />
+                              <TableColumn fx:id="table_person" prefWidth="101.0" text="Total Person" />
+                              <TableColumn fx:id="table_price" prefWidth="94.0" text="Total Price" />
+                              <TableColumn fx:id="table_date" prefWidth="75.0" text="Date" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="person_txt" layoutX="264.0" layoutY="349.0" prefHeight="25.0" prefWidth="210.0" />
+                        <Label layoutX="15.0" layoutY="720.0" prefHeight="38.0" prefWidth="561.0" text="On whose behalf would you like to make your reservation? Fill in the information completely">
+                           <font>
+                              <Font name="Franklin Gothic Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="name_txt" layoutX="256.0" layoutY="97.0" prefHeight="25.0" prefWidth="227.0" />
+                        <TextField fx:id="id_txt" layoutX="262.0" layoutY="146.0" prefHeight="25.0" prefWidth="215.0" />
+                        <TextField fx:id="phone_txt" layoutX="260.0" layoutY="207.0" prefHeight="25.0" prefWidth="219.0" />
+                        <Button fx:id="view_btn" layoutX="781.0" layoutY="682.0" mnemonicParsing="false" onAction="#view_btn_Click" prefHeight="51.0" prefWidth="218.0" text="view reservation">
+                           <font>
+                              <Font name="Sylfaen" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="48.0" layoutY="495.0" text="Reservation Date:">
+                           <font>
+                              <Font name="Sylfaen" size="29.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="dateFinish" layoutX="278.0" layoutY="506.0" prefHeight="25.0" prefWidth="205.0" promptText="finish" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
